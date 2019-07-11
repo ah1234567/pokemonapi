@@ -10,15 +10,15 @@ class App extends Component{
   }
 
 
-  // async componentDidMount(){
+  async componentDidMount(){
 
-  //   const response = await fetch (`https://pokeapi.co/api/v2/pokemon?Limit=150`)
-  //   const json = await response.json()
-  //   console.log(json)
-  //   console.log(json.name)
+    const response = await fetch (`https://pokeapi.co/api/v2/pokemon?Limit=150`)
+    const json = await response.json()
+    console.log(json)
+    console.log(json.name)
     
 
-  // }
+  }
 
   async componentDidMount(){
     const response = await fetch('https://pokeapi.co/api/v2/pokemon/1')
